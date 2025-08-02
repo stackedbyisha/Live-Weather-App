@@ -18,30 +18,6 @@ async function getWeather() {
     const temp = data.main.temp;
     const weather = data.weather[0].main;
     const icon = data.weather[0].icon;
-     switch (weather.toLowerCase()) {
-          case 'clear':
-            document.body.style.backgroundImage = "url('https://source.unsplash.com/1600x900/?sunny,sky')";
-            break;
-          case 'clouds':
-            document.body.style.backgroundImage = "url('https://source.unsplash.com/1600x900/?cloudy,clouds')";
-            break;
-          case 'rain':
-            document.body.style.backgroundImage = "url('https://source.unsplash.com/1600x900/?rainy,raindrops')";
-            break;
-          case 'snow':
-            document.body.style.backgroundImage = "url('https://source.unsplash.com/1600x900/?snow,winter')";
-            break;
-          case 'thunderstorm':
-            document.body.style.backgroundImage = "url('https://source.unsplash.com/1600x900/?thunder,storm')";
-            break;
-          case 'mist':
-          case 'fog':
-            document.body.style.backgroundImage = "url('https://source.unsplash.com/1600x900/?fog,mist')";
-            break;
-          default:
-            document.body.style.backgroundImage = "url('https://source.unsplash.com/1600x900/?nature')";
-            break;
-        }
 
     resultBox.innerHTML = `
       <h2>${data.name}</h2>
