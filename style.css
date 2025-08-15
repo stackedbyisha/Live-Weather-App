@@ -9,10 +9,10 @@ body {
 
 .app {
   text-align: center;
-  background: white;
+  background: #5dabd8; 
   padding: 2rem;
   border-radius: 10px;
-  box-shadow: 0 0 20px rgba(0,0,0,0.1);
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
 }
 
 input {
@@ -21,6 +21,10 @@ input {
   font-size: 1rem;
   border: 1px solid #ccc;
   border-radius: 6px;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  -ms-border-radius: 6px;
+  -o-border-radius: 6px;
 }
 
 button {
@@ -33,6 +37,10 @@ button {
   margin-left: 0.5rem;
   margin-top: 0.5rem;
   cursor: pointer;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  -ms-border-radius: 6px;
+  -o-border-radius: 6px;
 }
 
 .result {
@@ -46,7 +54,3 @@ button {
 .result img {
   width: 80px;
 }
-
-img {
-      width: 100px;
-    }
